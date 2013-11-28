@@ -18,3 +18,16 @@ task :deploy do
     puts "Done."
   end
 end
+
+desc "Update bourbon and neat and fetch latest normalize.css"
+task :update do
+  puts "Updating bourbon ..."
+  system "bourbon update --path source/stylesheets/vendor"
+  puts "Updating neat ..."
+  # neat doesn't currently support the --path flag so we'll use a
+  # subshell instead:
+  system "(cd source/stylesheets/vendor && neat update)"
+  puts "Updating normalize.css ..."
+  system "curl -o source/stylesheets/vendor/_normalize.scss https://raw.github.com/necolas/normalize.css/master/normalize.css"
+end
+
