@@ -13,12 +13,12 @@
 %link(rel="icon" type="image/ico" href="favicon.ico")
 
 = javascript_include_tag "vendor/modernizr-2.6.2.min"
-= stylesheet_link_tag "application"
+= stylesheet_link_tag "styles"
 
 -# Typekit
-  = javascript_include_tag "//use.typekit.net/XXX.js"
-  :javascript
-    try{Typekit.load();}catch(e){}
+= javascript_include_tag "//use.typekit.net/hst4kim.js"
+:javascript
+  try{Typekit.load();}catch(e){}
 
 -# Google fonts
   %link(href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css")

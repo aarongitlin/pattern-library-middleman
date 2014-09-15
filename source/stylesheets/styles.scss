@@ -1,0 +1,78 @@
+@import 'normalize/normalize.css';
+@import 'bourbon/bourbon';
+@import 'base/base';
+@import 'neat/neat';
+@import 'refills/refills';
+
+// As long as Styles is first element
+.styles .header-nav li:nth-child(1) {
+	background-color: $dark-orange;
+}
+.components .header-nav li:nth-child(2) {
+	background-color: $dark-orange;
+}
+
+.site-header {
+	background-color: $orange;
+}
+
+.logo {
+	@include span-columns(4);
+	margin-top: 0.5em;
+	color: $white;
+}
+.header-nav {
+	float: right;
+	li {
+		float: left;
+		padding: 1em 2em;
+		font-weight: 600;
+		a {
+			color: $white;
+		}
+		&:hover {
+			background-color: $dark-orange;
+		}
+	}
+}
+.wrapper {
+	@include outer-container;
+	@include padding(1em);
+	@include media($max-screen-up) {
+		@include padding(0em);
+	}
+}
+.row {
+	@include row();
+}
+.logo-row {
+	@include row();
+	margin-top: 1em;
+	text-align: center;
+}
+
+.hero-container {
+	text-align: center;
+}
+
+
+.heading-divider {
+	border-bottom: 3px solid #333;
+	@include margin (1em null 1em null);
+	@include padding (0.2em null 0.2em null);
+}
+
+
+
+footer {
+	border-top: 1px solid $light-gray;
+	padding-top: 2em;
+	margin-top: 3em;
+	text-align: center;
+}
+
+.copyright {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	opacity: 0.75;
+}

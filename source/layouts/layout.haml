@@ -4,11 +4,10 @@
     = partial "partials/document_head"
 
   %body{:class => current_page.data.body_class || 'page'}
-    #container
-      = partial 'partials/header'
+    = partial 'partials/header'
 
-      #main(role="main")
-        = yield
+    #main(role="main")
+      = yield
 
-      = partial 'partials/footer'
-      = partial 'partials/scripts'
+    = partial 'partials/footer'
+    = partial 'partials/scripts'
