@@ -1,3 +1,5 @@
+require 'middleman-gh-pages'
+
 dev = OpenStruct.new({
   :ssh_user    => "polarbla@polarblau.com",
   :local_root  => "./build/",

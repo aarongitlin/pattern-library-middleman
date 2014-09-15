@@ -4,6 +4,9 @@ set :js_dir,      'javascripts'
 set :images_dir,  'images'
 set :index_file, "styles.html"
 
+activate :relative_assets
+set :relative_links, true
+
 # Partials directory
 set :partials_dir, 'partials'
 
