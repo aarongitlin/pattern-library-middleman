@@ -50,11 +50,51 @@
 	text-align: center;
 }
 
-.hero-container {
-	text-align: center;
+.light-gray-container {
+	background-color: $light-gray;
+}
+.top-section {
+	padding-top: 1em;
 }
 
+// Colors
+.colors-container {
+	@include row();
+	margin-top: 1.5em;
+}
+.primary-colors {
+	@include span-columns(8);
+	@include shift(2);
+}
+.color-section-title {
+	text-align: center;
+	border-bottom: 1px solid $light-gray;
+}
+.color-primary {
+	@include span-columns(2.66 of 8);
+	border: 1px solid gray;
+	border-radius: 3px;
+	height: 6em;
+	margin-top: 1em;
+	&.one {
+		background-color: $orange;
+	}
+	&.two {
 
+	}
+	&.three {
+	}
+}
+.secondary-colors {
+	@include row();
+}
+.color-secondary {
+	@include span-columns(2);
+}
+
+.grays {
+	@include row();
+}
 .heading-divider {
 	border-bottom: 3px solid #333;
 	@include margin (1em null 1em null);

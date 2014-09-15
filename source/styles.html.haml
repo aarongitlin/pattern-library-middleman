@@ -3,12 +3,34 @@ title: Pattern Library Styles
 body_class: styles
 ---
 
-.wrapper
-  %article
-    %header
-      %h2
-        Styles
-    %section
-      %p
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+.light-gray-container.top-section
+  .wrapper
+    %section.style-overview
+      %h3 Cards
+      %p The metaphor of cards is a common one in mobile application design, and one that we have chosen to use for this product as well.
+      %img(src='images/cards.png' alt='cards')
+
+.dark-gray-container
+  .wrapper
+    %section.style-colors
+      %h3 Colors
+      %p Some of the main colors used in the appliction
+      .colors-container
+        .primary-colors
+          %h4.color-section-title Primary Colors
+          .color-primary.one
+          .color-primary.two
+          .color-primary.three
+      .colors-container
+        .secondary-colors
+          %h4.color-section-title Secondary Colors
+          .color-secondary.one
+          .color-secondary.two
+          .color-secondary.three
+          .color-secondary.four
+      .colors-container
+        .grays
+          %h4.color-section-title Grays
+          .color-gray.one
+          .color-gray.two
+          .color-gray.three
