@@ -2,35 +2,28 @@
 title: Pattern Library Styles
 body_class: styles
 ---
+= stylesheet_link_tag "styles"
 
 .light-gray-container.top-section
   .wrapper
     %section.style-overview
-      %h3 Cards
-      %p The metaphor of cards is a common one in mobile application design, and one that we have chosen to use for this product as well.
-      %img(src='images/cards.png' alt='cards')
+      %h3 Concept
+      %p White space and elegant typography
 
-.dark-gray-container
-  .wrapper
-    %section.style-colors
-      %h3 Colors
-      %p Some of the main colors used in the appliction
-      .colors-container
-        .primary-colors
-          %h4.color-section-title Primary Colors
-          .color-primary.one
-          .color-primary.two
-          .color-primary.three
-      .colors-container
-        .secondary-colors
-          %h4.color-section-title Secondary Colors
-          .color-secondary.one
-          .color-secondary.two
-          .color-secondary.three
-          .color-secondary.four
-      .colors-container
-        .grays
-          %h4.color-section-title Grays
-          .color-gray.one
-          .color-gray.two
-          .color-gray.three
+
+.wrapper
+  %section.style-colors
+    %h3 Colors
+    %p Some of the main colors used in the appliction
+    #primary-colors.colors-category
+      %h4.color-section-title Primary Colors
+      .color-grid
+        .color.primary.one
+        .color.primary.two
+        .color.primary.three
+    #secondary-colors.colors-category
+      %h4.color-section-title Secondary Colors
+      .color-grid
+        .color.secondary.one
+        .color.secondary.two
+        .color.secondary.three
