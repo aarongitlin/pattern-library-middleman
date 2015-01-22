@@ -19,7 +19,7 @@
     <link href='favicon.png' rel='shortcut icon'>
     <link href='favicon.ico' rel='icon' type='image/ico'>
     <script src="javascripts/vendor/modernizr-2.6.2.min.js" type="text/javascript"></script>
-    <link href="stylesheets/styles.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/core.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="//use.typekit.net/hst4kim.js" type="text/javascript"></script>
     <script>
       try{Typekit.load();}catch(e){}
@@ -37,7 +37,13 @@
               <a href='styles.html'>styles</a>
             </li>
             <li>
+              <a href='elements.html'>elements</a>
+            </li>
+            <li>
               <a href='components.html'>components</a>
+            </li>
+            <li>
+              <a href='modules.html'>modules</a>
             </li>
             <li>
               <a href='templates.html'>templates</a>
@@ -47,47 +53,36 @@
       </div>
     </header>
     <div id='main' role='main'>
+      <link href="stylesheets/styles.css" media="screen" rel="stylesheet" type="text/css" />
       <div class='light-gray-container top-section'>
         <div class='wrapper'>
           <section class='style-overview'>
-            <h3>Cards</h3>
-            <p>The metaphor of cards is a common one in mobile application design, and one that we have chosen to use for this product as well.</p>
-            <img alt='cards' src='images/cards.png'>
+            <h3>Concept</h3>
+            <p>White space and elegant typography</p>
           </section>
         </div>
       </div>
-      <div class='dark-gray-container'>
-        <div class='wrapper'>
-          <section class='style-colors'>
-            <h3>Colors</h3>
-            <p>Some of the main colors used in the appliction</p>
-            <div class='colors-container'>
-              <div class='primary-colors'>
-                <h4 class='color-section-title'>Primary Colors</h4>
-                <div class='color-primary one'></div>
-                <div class='color-primary two'></div>
-                <div class='color-primary three'></div>
-              </div>
+      <div class='wrapper'>
+        <section class='style-colors'>
+          <h3>Colors</h3>
+          <p>Some of the main colors used in the appliction</p>
+          <div class='colors-category' id='primary-colors'>
+            <h4 class='color-section-title'>Primary Colors</h4>
+            <div class='color-grid'>
+              <div class='color primary one'></div>
+              <div class='color primary two'></div>
+              <div class='color primary three'></div>
             </div>
-            <div class='colors-container'>
-              <div class='secondary-colors'>
-                <h4 class='color-section-title'>Secondary Colors</h4>
-                <div class='color-secondary one'></div>
-                <div class='color-secondary two'></div>
-                <div class='color-secondary three'></div>
-                <div class='color-secondary four'></div>
-              </div>
+          </div>
+          <div class='colors-category' id='secondary-colors'>
+            <h4 class='color-section-title'>Secondary Colors</h4>
+            <div class='color-grid'>
+              <div class='color secondary one'></div>
+              <div class='color secondary two'></div>
+              <div class='color secondary three'></div>
             </div>
-            <div class='colors-container'>
-              <div class='grays'>
-                <h4 class='color-section-title'>Grays</h4>
-                <div class='color-gray one'></div>
-                <div class='color-gray two'></div>
-                <div class='color-gray three'></div>
-              </div>
-            </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
     </div>
     <footer id='footer'>
