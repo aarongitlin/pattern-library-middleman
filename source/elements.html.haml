@@ -5,6 +5,11 @@ body_class: elements
 
 = stylesheet_link_tag "elements"
 
+.light-gray-container.top-section
+  .wrapper
+    %section.style-overview
+      %p.concept-text Some of the smaller pieces of the puzzle
+
 .wrapper
   %section.element
     %h3 Buttons
@@ -13,4 +18,8 @@ body_class: elements
     .visuals
       %button.primary-button Primary Button
       %button.secondary-button Secondary Button
-    .code
+    %pre.code
+      %code
+        :code
+          # lang: html
+          <button class="primary">Primary Button</button>

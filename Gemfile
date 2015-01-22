@@ -8,3 +8,6 @@ gem 'bourbon'
 gem 'neat'
 
 gem 'middleman-gh-pages'
+
+# syntax highlighting
+gem "middleman-syntax"

@@ -10,21 +10,36 @@ html {
 
 // Add highlight to activated tab. As long as Styles is first element:
 .styles .header-nav li:nth-child(1) {
-	background-color: $medium-blue;
+	background-color: $light-gray;
 }
-// Components second:
-.components .header-nav li:nth-child(2) {
-	background-color: $medium-blue;
+// Elements second:
+.elements .header-nav li:nth-child(2) {
+	background-color: $light-gray;
 }
-
+// Components third:
+.components .header-nav li:nth-child(3) {
+	background-color: $light-gray;
+}
+// Modules fourth:
+.modules .header-nav li:nth-child(4) {
+	background-color: $light-gray;
+}
+// Templates fifth:
+.templates .header-nav li:nth-child(5) {
+	background-color: $light-gray;
+}
 // Site header
 .site-header {
-	background-color: $light-blue;
+	background-color: $off-white;
+	box-shadow: 0 0px 12px $light-gray;
 }
 .logo {
 	@include span-columns(4);
 	margin-top: 0.5em;
-	color: $white;
+	color: $dark-gray;
+	h3 {
+		font-weight: 100;
+	}
 }
 .logo-row {
 	@include row();
@@ -39,10 +54,10 @@ html {
 		padding: 1em 2em;
 		font-weight: 600;
 		a {
-			color: $white;
+			color: $dark-gray;
 		}
 		&:hover {
-			background-color: $medium-blue;
+			background-color: $light-gray;
 		}
 	}
 }

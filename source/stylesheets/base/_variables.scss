@@ -1,8 +1,8 @@
 // Typography
-$sans-serif: 'adelle-sans';
+$sans-serif: $helvetica;
 $serif: $georgia;
 $base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$header-font-family: $serif;
 
 // Sizes
 $base-font-size: 1em;
@@ -22,7 +22,7 @@ $medium-gray: #9D9D9D;
 $off-white: #F7F7F7;
 $white: #FFF;
 
-$light-gray: #EAE5E4;
+$light-gray: #EAEBEF;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;

@@ -13,6 +13,9 @@ set :partials_dir, 'partials'
 # Livereload
 activate :livereload
 
+# Syntax Highlighting
+activate :syntax
+
 # Build-specific configuration
 configure :build do
 
