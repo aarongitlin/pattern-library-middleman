@@ -1,10 +1,10 @@
 require 'middleman-gh-pages'
 
 dev = OpenStruct.new({
-  :ssh_user    => "polarbla@polarblau.com",
+  :ssh_user    => "aarongitlin",
   :local_root  => "./build/",
-  :remote_root => "public_html/PATH",
-  :public_url  => "http://www.polarblau.com/PATH/"
+  :remote_root => "git@github.com:aarongitlin/pattern-library-middleman.git",
+  :public_url  => ""
 })
 
 desc "Deploy 'deploy' dir to #{dev.ssh_user}:#{dev.remote_root}"

@@ -1,8 +1,8 @@
 // Typography
-$sans-serif: 'adelle-sans';
+$sans-serif: $helvetica;
 $serif: $georgia;
 $base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$header-font-family: $serif;
 
 // Sizes
 $base-font-size: 1em;
@@ -12,16 +12,21 @@ $header-line-height: $base-font-size * 1.25;
 $base-border-radius: em(3);
 
 // Colors
-$blue: #477DCA;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #EAE5E4;
-$dark-gray: #594F4C;
+$deep-blue: #22273D;
+$medium-blue: #6A8EA5;
+$light-blue: #84C3E6;
+
+$black: #090909;
+$dark-gray: #2D2E36;
+$medium-gray: #9D9D9D;
+$off-white: #F7F7F7;
+$white: #FFF;
+
+$light-gray: #EAEBEF;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 $red: #e32728;
-$white: #FFFBFA;
 $orange: #F2784B;
 $dark-orange: #A54E2D;
 
@@ -30,7 +35,7 @@ $base-background-color: white;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$base-accent-color: $orange;
+$base-accent-color: $deep-blue;
 
 // Link Colors
 $base-link-color: $base-accent-color;

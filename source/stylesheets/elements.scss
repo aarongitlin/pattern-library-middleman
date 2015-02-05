@@ -1,0 +1,23 @@
+@import 'core';
+
+// Buttons
+
+
+.element { 
+	@include span-columns(12);
+}
+
+.primary-button {
+	//@include button ($style: none, $base-color: $deep-blue, $text-size: inherit, $padding: 10px 24px)
+	@extend %button;
+  border-radius: 1px;
+  font-weight: normal;
+  line-height: 1;
+  padding: .75em 1.5em;
+  text-decoration: none;
+}
+
+.description, .visuals, .code {
+	@include span-columns(12);
+	padding-bottom: 0.66em;
+}

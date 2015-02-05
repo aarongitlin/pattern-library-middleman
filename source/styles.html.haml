@@ -2,13 +2,27 @@
 title: Pattern Library Styles
 body_class: styles
 ---
+= stylesheet_link_tag "styles"
+
+.light-gray-container.top-section
+  .wrapper
+    %section.style-overview
+      %p.concept-text White space and elegant typography
+
 
 .wrapper
-  %article
-    %header
-      %h2
-        Styles
-    %section
-      %p
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  %section.style-colors
+    %h3 Colors
+    %p Some of the main colors used in the appliction
+    #primary-colors.colors-category
+      %h4.color-section-title Primary Colors
+      .color-grid
+        .color.primary.one
+        .color.primary.two
+        .color.primary.three
+    #secondary-colors.colors-category
+      %h4.color-section-title Secondary Colors
+      .color-grid
+        .color.secondary.one
+        .color.secondary.two
+        .color.secondary.three

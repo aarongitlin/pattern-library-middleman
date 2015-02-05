@@ -27,7 +27,7 @@ GEM
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
-    eventmachine (1.0.3)
+    eventmachine (1.0.4)
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.9.3)
@@ -73,6 +73,9 @@ GEM
       sprockets (~> 2.2)
       sprockets-helpers (~> 1.1.0)
       sprockets-sass (~> 1.1.0)
+    middleman-syntax (2.0.0)
+      middleman-core (~> 3.2)
+      rouge (~> 1.0)
     multi_json (1.10.1)
     neat (1.6.0)
       bourbon (>= 3.1)
@@ -88,6 +91,7 @@ GEM
       ffi (>= 0.5.0)
     rb-kqueue (0.2.3)
       ffi (>= 0.5.0)
+    rouge (1.7.7)
     sass (3.4.4)
     sprockets (2.12.2)
       hike (~> 1.2)
@@ -113,4 +117,5 @@ DEPENDENCIES
   middleman (~> 3.2.0)
   middleman-gh-pages
   middleman-livereload (~> 3.1.0)
+  middleman-syntax
   neat

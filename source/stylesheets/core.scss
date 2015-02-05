@@ -1,0 +1,152 @@
+@import 'normalize/normalize.css';
+@import 'bourbon/bourbon';
+@import 'base/base';
+@import 'neat/neat';
+
+// Prevent stupid page-shift scroll when some pages have scroll bars and others don't
+html {
+	overflow-y: scroll;
+}
+
+// Add highlight to activated tab. As long as Styles is first element:
+.styles .header-nav li:nth-child(1) {
+	background-color: $light-gray;
+}
+// Elements second:
+.elements .header-nav li:nth-child(2) {
+	background-color: $light-gray;
+}
+// Components third:
+.components .header-nav li:nth-child(3) {
+	background-color: $light-gray;
+}
+// Modules fourth:
+.modules .header-nav li:nth-child(4) {
+	background-color: $light-gray;
+}
+// Templates fifth:
+.templates .header-nav li:nth-child(5) {
+	background-color: $light-gray;
+}
+// Site header
+.site-header {
+	background-color: $off-white;
+	box-shadow: 0 0px 12px $light-gray;
+}
+.logo {
+	@include span-columns(4);
+	margin-top: 0.5em;
+	color: $dark-gray;
+	h3 {
+		font-weight: 100;
+	}
+}
+.logo-row {
+	@include row();
+	margin-top: 1em;
+	text-align: center;
+}
+
+.header-nav {
+	float: right;
+	li {
+		float: left;
+		padding: 1em 2em;
+		font-weight: 600;
+		a {
+			color: $dark-gray;
+		}
+		&:hover {
+			background-color: $light-gray;
+		}
+	}
+}
+
+// Basic structural elements
+.wrapper {
+	@include outer-container;
+	@include padding(1em);
+	@include media($max-screen-up) {
+		@include padding(0em);
+	}
+}
+.row {
+	@include row();
+}
+section {
+	padding-top: 1em;
+	border-bottom: 1px solid $light-gray;
+}
+.heading-divider {
+	border-bottom: 3px solid #333;
+	@include margin (1em null 1em null);
+	@include padding (0.2em null 0.2em null);
+}
+
+// Styles
+
+.light-gray-container {
+	background-color: $light-gray;
+}
+
+// Colors
+.colors-container {
+	margin-top: 1.5em;
+}
+.colors-category {
+	@include span-columns(8);
+	@include shift(2);
+	@include omega();
+	padding-top: 1em;
+
+}
+.color-section-title {
+	text-align: center;
+	border-bottom: 1px solid $light-gray;
+}
+.color-grid {
+	@include span-columns(8);
+	@include shift(2 of 8);
+}
+.color {
+	@include span-columns(2 of 8);
+	border: 1px solid gray;
+	border-radius: 3px;
+	height: 6em;
+	margin-top: 1em;
+	&.primary.one {
+		background-color: $light-blue;
+	}
+	&.primary.two {
+
+	}
+	&.primary.three {
+	}
+}
+.secondary-colors {
+	@include span-columns(8);
+	@include shift(2);
+	@include omega();
+}
+.color-secondary {
+	@include span-columns(2);
+
+}
+
+
+
+
+//Footer
+
+footer {
+	border-top: 1px solid $light-gray;
+	padding-top: 2em;
+	margin-top: 3em;
+	text-align: center;
+}
+
+.copyright {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	opacity: 0.75;
+}
